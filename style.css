@@ -451,7 +451,10 @@
 .rulebook-main iframe {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  width: 80%;
+  min-width: 375px;
+  height: 90vh;           /* Use viewport height instead */
+  min-height: 500px;      /* Ensure minimum readability */
 }
 
 
@@ -515,7 +518,7 @@
 
 
  /* ====== Blog Page Specific Styles ====== */
-    .blog-page {
+    /* .blog-page {
       background-image: url('assets/CoveChest.png');
       background-size: cover;
       background-position: center;
@@ -523,12 +526,12 @@
       background-attachment: fixed;
       min-height: 100vh;
     }
-    
+     */
     /* Full-width header bar */
     .h1-bar {
       width: 100%;
       background-color: rgba(88, 101, 242, 0.8);
-      padding: 2rem 0rem;
+      padding: 1rem 0rem;
       text-align: center;
       margin-top: 2rem;
     }
