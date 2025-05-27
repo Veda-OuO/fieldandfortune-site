@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta and Title -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Field and Fortune Game</title>
+
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="home-page">
+  <!-- ====== Header Section ====== -->
+  <!-- <img src="assets/FarmSheetDiagramText.png" alt="Left Side Image" class="left-side-image">
+  <img src="assets/CardDiagram.png" alt="LowerLeft Side Image" class="lowerleft-side-image">
+  <img src="assets/WildsDemo2.png" alt="Right Side Image" class="right-side-image"> -->
+  <img src="assets/PlaytestImg.png" alt="UpperRight Side Image" class="upperright-side-image">
+  <header class="custom-header">
+  <div class="nav-wrapper">
+    <!-- Left Side Links -->
+    <div class="nav-left">
+      <a href="index.html">Home</a>
+      <a href="rulebook.html">Rulebook</a>
+      <a href="videos.html">
+        
+      Videos
+      <img src="assets/YTLogo.png" alt="Home Icon" class="nav-icon"> 
+      </a>
+    </div>
+
+    <!-- Centered Logo -->
+    <!-- <div class="logo-container">
+      <img src="assets/Logo2.png" alt="Game Logo" class="logo">
+    </div> -->
+
+    <!-- Right Side Links -->
+    <div class="nav-right">
+      <a href="blog.html">
+       Discord 
+         <img src="assets/DiscordLogo.png" alt="Home Icon" class="nav-icon">
+        
+      </a>
+      <a href="survey.html">Survey</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+  <!-- ====== Main Content Section ====== -->
+<main class="homepage-main">
+ 
+
+<div class="homepage-main-layout">
+  <div class="image-carousel">
+    <img src="assets/FarmSheetDiagramText.png" class="carousel-image active" alt="Slide 1">
+    <img src="assets/WildsDemo2.png" class="carousel-image" alt="Slide 2">
+    <img src="assets/CardDiagram.png" class="carousel-image" alt="Slide 3">
+  </div>
+
+  <div class="main-content">
+    <img src="assets/Logo1.png" alt="Main Game Logo" class="hero-logo">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3488394828" 
+      target="_blank" 
+      rel="noopener" 
+      class="tts-button">
+      Try on Tabletop Simulator
+    </a>
+    <img src="assets/Sublogo1.png" alt="Secondary Image" class="sub-image">
+  </div>
+</div>
+
+
+</main>
+
+  <!-- ====== Footer Section ====== -->
+  <!-- <footer>
+    <p>© 2025 My Board Game</p>
+  </footer> -->
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.carousel-image');
+    let index = 0;
+
+    function cycleImages() {
+      images.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+      });
+      index = (index + 1) % images.length;
+    }
+
+    cycleImages(); // Show first image
+    setInterval(cycleImages, 3000); // Change every 3 seconds
+  });
+  </script>
+
+
+
+
+
+
+</body>
+</html>
