@@ -1,0 +1,576 @@
+/* ====== Reset and base font ====== */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Constantia', serif;
+    background-image: url('assets/Image-Cover.png'); /* Change to .jpg if needed */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: white; /* Ensures readability on dark image */
+    /* overflow: hidden; */
+  }
+  
+  /* ====== Header section ====== */
+header {
+  background-color: rgba(27, 72, 196, 1);
+  color: white;
+  padding: 0.01rem 1rem;  /* reduced top/bottom padding */
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+  
+  /* ====== Navigation links ====== */
+  nav {
+    margin-top: 0.5rem;
+  }
+  nav a {
+    color: #e7e7e7;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ====== Main content ====== */
+  main {
+     background: none;     /* removes any background color */
+     box-shadow: none;     /* removes any shadows */
+     padding: 0;           /* removes spacing around */
+     border: none;         /* removes borders */
+  }
+  
+  /* ====== Footer ====== */
+  footer {
+    background-color: rgba(5, 7, 97, 0.7); /* semi-transparent background */
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Optional: make footer stand out less if overlapping content */
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Default size for desktop */
+/* iframe {
+  height: 1px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+*/
+/* Smaller height on mobile devices */
+/*@media (max-width: 768px) {
+  iframe {
+    height: 600px;
+  }
+}
+*/
+/* === Background Images by Page === */
+
+.home-page {
+  height: 100%;
+  background-image: url('assets/Cover5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0px; /* Negative values move the image up, positive moves down */
+  background-attachment: scroll;
+  min-height: 200vh;
+  /* overflow: hidden; */
+}
+
+.rulebook-page {
+  height: 100%;
+  background-image: url('assets/Scene1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll; /* or fixed, if you want it to stay put */
+  min-height: 200vh;      
+}
+
+.blog-page {
+  background-image: url('assets/CoveChest.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.videos-page {
+  height: 100%;
+  background-image: url('assets/TeleNight.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll; /* or fixed, if you want it to stay put */
+  min-height: 200vh;               /* ensure body is at least full screen tall */
+}
+
+.survey-page {
+  height: 100%;
+  background-image: url('assets/NightBarn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll; /* or fixed, if you want it to stay put */
+  min-height: 200vh;               /* ensure body is at least full screen tall */
+}
+
+.contact-page {
+  background-image: url('assets/Scene2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center -800px; /* Negative values move the image up, positive moves down */
+}
+
+.custom-header {
+  background: none; /* removes color bar */
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+.logo-container {
+  flex: 0 0 auto;
+}
+
+.logo {
+  height: 100px;  /* adjust size as needed */
+  max-width: 100%;
+}
+
+/* Yellow button-style nav links */
+.nav-left a,
+.nav-right a {
+  display: flex;                /* flex for centering text */
+  align-items: center;
+  justify-content: center;
+  width: 120px;                  /* fixed width */
+  height: 37px;                 /* fixed height = square */
+  background-color: rgb(255, 208, 0);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: 2px solid rgb(255, 153, 0);
+  /* padding: 0.5rem 1rem; */
+  border-radius: 2px;
+  font-weight: bold;
+  margin: 0 5px;    
+  transition: background 0.3s;
+  /* Drop shadow */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+}
+
+/* === Navigation Icon Styles === */
+.nav-left a img,
+.nav-right a img {
+  height: 20px;
+  width: 20px;
+  margin-left: 12px;
+  /* margin-right: 0px; */
+  vertical-align: middle;
+}
+
+
+/* === Homepage Main Logo === */
+.hero-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 500px;             /* or adjust as needed */
+  margin: 4rem auto;        /* centers it with spacing above/below */
+}
+
+.homepage-main {
+  text-align: center;
+}
+
+.sub-image {
+  display: block;
+  max-width: 100%;
+  width: 600px;         /* Adjust size as needed */
+  margin: -2rem auto;    /* Spacing and center alignment */
+}
+
+
+.tts-button {
+  display: inline-block;
+  background-color: #0f0f0f; /* Yellow/gold button */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  margin: 1rem auto;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.tts-button:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+/* Center the button inside the main container */
+.homepage-main {
+  /* text-align: center; */
+  padding: 2rem;
+}
+
+.left-side-image {
+  position: absolute;       /* Or use fixed if you want it to stay put on scroll */
+  left: 0;
+  top: 160px;      /* down from the top of page */
+  left: 220px;      /* in from the left edge */
+  width: 315px;             /* or whatever fits your design */
+  height: auto;
+  z-index: 10;              /* ensures it sits above backgrounds */
+  opacity: 1; /* 🔁 Adjust between 0 (invisible) and 1 (fully visible) */
+}
+
+.right-side-image {
+  position: absolute;       /* Or use fixed if you want it to stay put on scroll */
+  right: 0;
+  top: 375px;      /* down from the top of page */
+  right: 175px;      /* in from the left edge */
+  width: 400px;             /* or whatever fits your design */
+  height: auto;
+  z-index: 10;              /* ensures it sits above backgrounds */
+  opacity: 1; /* 🔁 Adjust between 0 (invisible) and 1 (fully visible) */
+}
+
+.lowerleft-side-image {
+  position: absolute;       /* Or use fixed if you want it to stay put on scroll */
+  /* left: 0; */
+  top: 500px;      /* down from the top of page */
+  left: 150px;      /* in from the left edge */
+  width: 420px;             /* or whatever fits your design */
+  height: auto;
+  z-index: 10;              /* ensures it sits above backgrounds */
+  opacity: 1; /* 🔁 Adjust between 0 (invisible) and 1 (fully visible) */
+}
+
+.upperright-side-image {
+  position: absolute;       /* Or use fixed if you want it to stay put on scroll */
+  /* left: 0; */
+  top: 1000px;      /* down from the top of page */
+  right: 400px;      /* in from the left edge */
+  width: 400px;             /* or whatever fits your design */
+  height: auto;
+  z-index: 10;              /* ensures it sits above backgrounds */
+  opacity: 1; /* 🔁 Adjust between 0 (invisible) and 1 (fully visible) */
+}
+
+
+/* =======CONTACT PAGE========= */
+
+
+/* === Contact Page Header Styling === */
+.contact-page main h2 {
+  text-align: center;       /* or left/right */
+  margin-top: 3rem;         /* space from top of main */
+  margin-bottom: 1rem;
+  font-size: 2rem;          /* optional: bigger text */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* 👈 Drop shadow */
+}
+
+.contact-page main p {
+  text-align: center;       /* or left/right */
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  color: #ffffff;              /* softer gray (optional) */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* 👈 Drop shadow */
+}
+
+/* FORM BOXES */
+
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* 👈 Drop shadow */
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* =======VIDEO PAGE========= */
+
+
+/* === Contact Page Header Styling === */
+.videos-page main h2 {
+  text-align: center;       /* or left/right */
+  margin-top: 3rem;         /* space from top of main */
+  margin-bottom: 1rem;
+  font-size: 2rem;          /* optional: bigger text */
+}
+
+.videos-page main p {
+  text-align: center;       /* or left/right */
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #000000;              /* softer gray (optional) */
+}
+
+
+/* Video Frames */
+
+.videos-main {
+  text-align: center;
+  padding: 1rem;
+  color: #000000; 
+}
+
+.videos-main h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #000000; 
+}
+
+.videos-main p {
+  margin-bottom: 0rem;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;       /* ✅ Controls the actual size */
+  margin: 2rem auto;
+  padding-bottom: 30%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;                    /* 🔁 reset to align inside the container */
+  width: 100%;                /* ✅ let it take full width of container */
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ==== SURVEY PAGE ==== */
+
+.survey-main {
+  text-align: center;
+  padding: 2rem;
+}
+
+.survey-main h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* 👈 Drop shadow */
+}
+
+.survey-main p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* 👈 Drop shadow */
+}
+
+.survey-main iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* ==== RULEBOOK PAGE ==== */
+
+.rulebook-main {
+  text-align: center;
+  padding: 2rem;
+  color: #000000;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* 👈 Drop shadow */
+}
+
+.rulebook-main h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.rulebook-main p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+.rulebook-main iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+/* IMAGE CAROUSEL - FIXED LAYOUT */
+
+/* IMAGE CAROUSEL - ABSOLUTE POSITIONING FOR FULL CONTROL */
+
+.homepage-main-layout {
+  /* Remove flexbox - go back to normal flow */
+  position: relative;
+  width: 100%;
+  /* Remove all the flexbox properties */
+}
+
+.image-carousel {
+  position: absolute; /* Use absolute positioning like your other images */
+  top: 700px;        /* Move up/down - adjust this value */
+  left: 400px;        /* Move left/right - adjust this value */
+  /* max-width: 350px; */
+  width: 600px;
+  height: 700px;
+  z-index: 10;       /* Same as your other positioned images */
+  margin: 0;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Changed from 'cover' to 'contain' */
+  object-position: center; /* Centers the image */
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+.main-content {
+  /* Remove flex properties - let it flow normally */
+  text-align: center;
+  width: 100%;
+}
+
+/* Restore the homepage-main to center your hero content */
+.homepage-main {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Make sure your hero logo stays centered */
+.hero-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+  margin: 4rem auto; /* This centers it properly */
+}
+
+
+/* =====BLOG PAGE==== */
+
+.blog-page main h1 {
+  text-align: center;         /* Center the main heading */
+  margin-top: 4rem;           /* Push it down a bit */
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #fff;                /* Adjust to match your background */
+
+}
+
+.blog-page main h2 {
+  text-align: left;
+  margin-left: 8rem;
+  font-size: 3rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  color: #ffffff;             /* Warm yellow tone for contrast */
+  white-space: pre-line;      /* Optional: lets \n line breaks work if you ever inject them from JS */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* 👈 Drop shadow */
+}
+
+.h1-bar {
+  width: 100%;
+  background-color: rgb(88, 101, 242, 0.8);      /* ✅ Full-width black background */
+  padding: 0rem 0;              /* Top and bottom space */
+  text-align: center;
+  /* border-bottom: 2px solid #dfdfdf; */
+}
+
+.h1-bar h1 {
+  color: white;
+  font-size: 5rem;
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* 👈 Drop shadow */
+}
+
+.discord-image {
+  display: block;
+  max-width: 100%;
+  width: 500px;         /* Adjust size as needed */
+  margin: -2rem auto;    /* Spacing and center alignment */
+  transform: translateY(-350px);
+}
+
+a.discord-link {
+  display: inline-block; /* Shrinks to image size */
+  line-height: 0;        /* Removes invisible spacing below image */
+}
